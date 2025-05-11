@@ -42,3 +42,12 @@
             ;
     };
 };
+
+&gpio0 {
+    pwr_led: pwr_led {
+        gpios = <&gpio0 26 GPIO_ACTIVE_LOW>;
+        label = "PWR_LED";
+        gpio-hog;
+        default-state = "on";
+    };
+};
