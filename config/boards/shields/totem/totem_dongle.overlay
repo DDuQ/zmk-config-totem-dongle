@@ -6,8 +6,6 @@
 
 #include "totem.dtsi"
 
-
-
 &kscan0 {
     col-gpios
         = <&xiao_d 4 GPIO_ACTIVE_HIGH>
@@ -16,16 +14,4 @@
         , <&xiao_d 9 GPIO_ACTIVE_HIGH>
         , <&xiao_d 8 GPIO_ACTIVE_HIGH>
         ;
-};
-
-/ {
-    leds {
-        compatible = "gpio-leds";
-
-        pwr_led: pwr_led {
-            gpios = <&gpio0 26 GPIO_ACTIVE_LOW>;
-            label = "PWR_LED";
-            default-state = "on";
-        };
-    };
 };
